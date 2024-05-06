@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-section {
+section:not(#section2) {
   height: 100vh;
-  width: 100vw;
   max-width: 1440px;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +14,9 @@ section {
 }
 
 @font-face {
-  font-family: uilight;
-  src: url("fonts/SFUIText-Light.ttf");
+  font-family: hkgro;
+  src: url("fonts/hkgroteskwide-regular.otf");
 
-  font-family: uiBold;
-  src: url("fonts/SFUIText-Bold.ttf");
+  font-family: neue;
+  src: url("fonts/NeueMontreal-Regular.otf");
 }

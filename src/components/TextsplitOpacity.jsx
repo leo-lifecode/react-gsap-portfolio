@@ -60,16 +60,21 @@ const TextSpllitOpacity1 = () => {
   });
 
   return (
-    <div ref={main} className="h-screen w-screen px-2 text-black sm:px-8">
-      <div className="flex h-full flex-col items-center justify-center text-center text-[24px] font-semibold leading-tight text-white sm:text-[24px] md:text-[36px] ">
-        <div
-          id="textabout"
-          className="flex w-[370px] flex-wrap items-center justify-center text-center sm:w-max sm:max-w-[900px]"
-        >
-          <SplitText
-            text="Our new Mobile ePaper device combines go our new Mobile ePaper device combines go Mobile ePaper device combines go"
-            parclass="lol opacity-30 "
-          />
+    <div
+    id="nono"
+      ref={main}
+      className="flex h-screen text-black justify-center items-center sm:px-8 "
+    >
+      <div className="flex flex-col font-bold">
+        <div id="textabout" className="m-auto px-[12px] sm:m-0">
+          {/*text-center  w-[330px] sm:w-max sm:max-w-[1000px] sm:px-0 md:w-[600px] lg:w-[1000px] lg:max-w-[1000px] */}
+          <div className="flex flex-wrap font-neue text-[43px] text-white sm:leading-[60px] md:text-[80px] md:leading-[145px] lg:text-[86px] lg:leading-[170px] xl:text-[103px]">
+            {/* <div></div> */}
+            <SplitText
+              text="I create unique websites and i like make a responsive web experiences for fun."
+              parclass="lol opacity-30"
+            />
+          </div>
         </div>
       </div>
     </div>

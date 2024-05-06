@@ -2,8 +2,8 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      uilight: ["uilight ", "sans-serif"],
-      uiBold: ["uiBold", "sans-serif"],
+      hkgro: ["hkgro ", "sans-serif"],
+      neue: ["neue", "sans-serif"],
     },
     extend: {},
   },

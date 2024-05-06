@@ -18,7 +18,7 @@ const Overlay = ({ time }) => {
       duration: 0.7,
       opacity: 0,
       stagger: 0.04,
-      ease: "power1.inOut",
+      ease: "power4.inOut",
     });
     time.to(
       "#overlay",
@@ -26,7 +26,7 @@ const Overlay = ({ time }) => {
         opacity: 1,
         yPercent: -100,
         duration: 0.6,
-        ease: "power2.inOut",
+        ease: "power3.inOut",
       },
       "-=0.3",
     );
@@ -34,19 +34,19 @@ const Overlay = ({ time }) => {
   return (
     <div
       id="overlay"
-      className="overlay fixed left-0 top-0 z-[999] flex h-svh w-screen items-center justify-center  text-2xl font-bold lg:text-3xl xl:text-4xl"
+      className="overlay fixed left-0 top-0 z-[999] flex h-svh w-screen items-center justify-center text-2xl font-bold lg:text-3xl xl:text-4xl"
     >
       <div
         id="container"
         className="z-50 flex h-[300px] flex-col items-center justify-center overflow-hidden "
       >
         <span id="containertext" className="overflow-hidden text-white">
-          <span id="textup" className="opacity-1 flex ">
+          <span id="textup" className="opacity-1 font-neue font-semibold flex">
             Rizal
           </span>
         </span>
         <span id="containertext" className="overflow-hidden text-white">
-          <span id="textup" className="opacity-1 flex ">
+          <span id="textup" className="opacity-1 flex font-neue font-semibold">
             © Portfolio 2024
           </span>
         </span>

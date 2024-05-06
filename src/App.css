@@ -5,7 +5,7 @@
     rgba(254, 254, 254, 1) 0%,
     rgba(232, 232, 232, 1) 100%
   );
-  filter: blur(8px);
+  filter: blur(5px);
 }
 
 text {
@@ -29,40 +29,33 @@ text {
   fill: #0a0a0a;
 }
 
-.logonama {
-  --fill-color: #757575;
-  color: rgb(141, 141, 141);
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px rgb(141, 141, 141);
-  background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
-  color: transparent;
-  background-clip: text;
+#overlay {
+  background: #000000;
+  background-image: url("./assets/images/nois2.png");
+  background-attachment: fixed;
 }
 
 li {
-  --fill-color: #757575;
   position: relative;
-  display: block;
-  font: 700 1.6rem sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px rgb(141, 141, 141);
-  background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
-  color: transparent;
-  background-clip: text;
+  display: inline-block;
 }
-#overlay {
-  background-attachment: fixed;
-  background-color: rgb(0, 0, 0);
-  /* filter: url("./assets//images/noise.png") */
+
+li::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: 250ms ease-in-out;
+}
+
+li:hover::before {
+  width: 100%;
 }
 
 @media screen and (max-width: 640px) {
-  li {
-    -webkit-text-stroke: 1px #0a0a0a;
-    color: #0a0a0a;
-    margin-bottom: 30px;
-  }
   #containernav {
     --tw-bg-opacity: 1;
     background-image: url(assets/images/noise.png);

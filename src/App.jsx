@@ -5,6 +5,9 @@ import Overlay from "./components/Overlay";
 import Homepage from "./components/Homepage";
 import Navbar from "./components/Navbar";
 import TextSpllitOpacity1 from "./components/TextsplitOpacity";
+import AboutMe from "./components/AboutMe";
+import Contacts from "./components/Contacts";
+import Footer from "./components/footer";
 
 function App() {
   const [time, setTime] = useState(gsap.timeline());
@@ -16,10 +19,16 @@ function App() {
         <Homepage time={time} />
       </section>
       <TextSpllitOpacity1 />
-      <section id="section2">aboutme</section>
+      <section id="section2">
+        <AboutMe />
+      </section>
       <section id="section3">project</section>
-      <section id="section4">Contact</section>
-      <div id="section5">footer</div>
+      <section id="section4">
+        <Contacts />
+      </section>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
