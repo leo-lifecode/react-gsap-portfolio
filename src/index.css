@@ -7,6 +7,28 @@ section:not(#section2) {
   max-width: 1440px;
 }
 
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 40px;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+
+}
+
+textarea:focus {
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;

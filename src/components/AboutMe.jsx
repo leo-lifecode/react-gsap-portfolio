@@ -12,7 +12,6 @@ const AboutMe = () => {
         start: "top =-110",
         end: "bottom",
         scrub: 0.5,
-        markers: true,
       },
     });
 
@@ -46,11 +45,14 @@ const AboutMe = () => {
             className="rounded-lg bg-cover bg-center sm:h-[350px] sm:w-[350px] lg:h-[500px] lg:w-[450px]"
           />
         </div>
-        <div id="descriptionme" className="flex flex-[0_0_100%] flex-col px-[18px] font-neue text-[16px] font-thin text-gray-800 sm:flex-[0_0_55%] sm:text-[18px] lg:text-[24px]">
+        <div
+          id="descriptionme"
+          className="flex flex-[0_0_100%] flex-col px-[18px] font-neue text-[16px] font-thin text-gray-800 sm:flex-[0_0_55%] sm:text-[18px] lg:text-[24px]"
+        >
           <div className="mt-2 font-neue text-[24px] font-semibold sm:mt-0 md:text-2xl lg:text-4xl">
             intorodcution who am i ?
           </div>
-          <div >
+          <div>
             <div className="mt-2 sm:mt-[14px] md:w-[400px] lg:mt-[24px] lg:w-[500px] xl:w-[620px]">
               I'm a student. I like learning new things about front end
               developers and I have an interest in being a front end developer.

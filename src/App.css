@@ -54,6 +54,25 @@ li::before {
 li:hover::before {
   width: 100%;
 }
+.navfooter {
+  position: relative;
+  display: inline-block;
+}
+
+.navfooter::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: 250ms ease-in-out;
+}
+
+.navfooter:hover::before {
+  width: 100%;
+}
 
 @media screen and (max-width: 640px) {
   #containernav {
