@@ -1,5 +1,20 @@
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 function Footer() {
+  useGSAP(() => {
+    gsap.from("#sayhi", {
+      scrollTrigger: {
+        trigger: "#section5",
+        start: "top +=650",
+        end: "top +=650",
+        scrub: 1,
+        once: true,
+      },
+      opacity: 0,
+      duration: 2,
+      y: 80,
+    });
+  });
   const handlegsapscroll = (index) => {
     gsap.to(window, {
       duration: 1,
@@ -10,11 +25,14 @@ function Footer() {
     });
   };
   return (
-    <div className="">
-      <div className="text-center font-hkgro text-6xl font-black sm:text-5xl md:text-7xl lg:text-9xl">
+    <div className="relative mt-[7%]">
+      <div
+        id="sayhi"
+        className="relative z-10 text-center font-hkgro text-6xl font-black sm:text-5xl md:text-7xl lg:text-9xl"
+      >
         SAY HI!
       </div>
-      <div className="3xl:px-[10%] 3xl:pb-16 relative px-6 pb-8 pt-8 font-neue sm:px-[4%] sm:pt-[5%]">
+      <div className="3xl:px-[10%] 3xl:pb-16 relative z-[3] px-6 pb-8 pt-6 font-neue sm:px-[4%] sm:pt-[5%]">
         <div className="grid grid-cols-2 gap-x-[1.5rem] gap-y-7 md:grid-cols-12 lg:gap-x-[2.5rem] lg:gap-y-10">
           <div className=" flex flex-col md:col-span-6 lg:col-span-6">
             <span className="link-text border-accent-500 text-secondary-300 mb-3 flex border-b-[1.5px] pb-1 font-bold uppercase">
@@ -100,7 +118,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="grid-gap mt-14 grid grid-cols-1 items-end font-hkgro sm:grid-cols-12">
+        <div className="grid-gap mt-7 grid grid-cols-1 items-end font-hkgro sm:mt-12 sm:grid-cols-12">
           <span className="tracking-heading text-secondary-300 order-last col-span-8 text-[2.5rem] font-bold leading-[85%] sm:order-first sm:text-[3.5rem] md:col-span-6 lg:col-span-6 lg:text-[5rem]">
             © 2024
             <br className="block" />
@@ -113,6 +131,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className="photocover absolute bottom-[-80px] left-0 right-0 z-[1] mx-auto h-[300px] w-[300px] rounded-full bg-cover bg-center bg-no-repeat sm:-bottom-2/3 md:-bottom-1/4 lg:-bottom-1/3 lg:h-[400px] lg:w-[400px] xl:h-[550px] xl:w-[550px]"></div>
     </div>
   );
 }

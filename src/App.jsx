@@ -22,11 +22,17 @@ function App() {
       <section id="section2">
         <AboutMe />
       </section>
-      <section id="section3">project</section>
+      <div id="section3" className="flex py-[10%] px-[10%]">
+        <div>peoject</div>
+        <div>peoject</div>
+        <div>peoject</div>
+        <div>peoject</div>
+        <div>peoject</div>
+      </div>
       <section id="section4">
         <Contacts />
       </section>
-      <div>
+      <div id="section5">
         <Footer />
       </div>
     </div>

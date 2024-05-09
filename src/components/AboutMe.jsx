@@ -4,23 +4,25 @@ import myImage from "../assets/images/myImage.jpg";
 
 const AboutMe = () => {
   useGSAP(() => {
-    gsap.to("#descriptionme", {
-      y: 200,
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#section2",
-        start: "top =-110",
-        end: "bottom",
-        scrub: 0.5,
-      },
-    });
-
+    if (window.innerWidth > 640) {
+      gsap.to("#descriptionme", {
+        y: 100,
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#section2",
+          start: "top =-110",
+          end: "bottom",
+          scrub: 0.5,
+        },
+      });
+    }
     gsap.from("#title-about", {
       scrollTrigger: {
         trigger: "#section2",
         start: "top +=250",
         end: "top +=250",
         scrub: 0.5,
+        once: true,
       },
       opacity: 0,
       duration: 1,
