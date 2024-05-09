@@ -6,11 +6,11 @@ const AboutMe = () => {
   useGSAP(() => {
     if (window.innerWidth > 640) {
       gsap.to("#descriptionme", {
-        y: 100,
+        y: 50,
         duration: 1,
         scrollTrigger: {
           trigger: "#section2",
-          start: "top =-110",
+          start: "top =-200",
           end: "bottom",
           scrub: 0.5,
         },
@@ -27,6 +27,18 @@ const AboutMe = () => {
       opacity: 0,
       duration: 1,
       y: 80,
+    });
+
+    gsap.from(".skills", {
+      scrollTrigger: {
+        trigger: "#section2",
+        start: "center",
+        end: "center",
+        once: true,
+      },
+      y: 100,
+      stagger: 0.08,
+      duration: 0.1,
     });
   });
 
@@ -63,6 +75,32 @@ const AboutMe = () => {
               I see social life as an opportunity to learn from others, gain new
               inspiration, and broaden my horizons about the latest trends in
               the technology and web design industry.
+            </div>
+            <div className="flex flex-col overflow-hidden">
+              <div className="my-[12px]">My skills </div>
+              <div className="flex flex-wrap gap-3 font-neue text-[12px] uppercase sm:text-[18px]">
+                <div className="skills rounded-2xl border border-black px-2 py-1 sm:px-4">
+                  html
+                </div>
+                <div className="skills rounded-2xl border border-black px-2 py-1 sm:px-4">
+                  css
+                </div>
+                <div className="skills rounded-2xl border border-black px-2 py-1 sm:px-4">
+                  javascript
+                </div>
+                <div className="skills rounded-2xl border border-black px-2 py-1 sm:px-4">
+                  react js
+                </div>
+                <div className="skills rounded-2xl border border-black px-2 py-1 sm:px-4">
+                  tailwind css
+                </div>
+                <div className="skills rounded-2xl border border-black px-2 py-1 sm:px-4">
+                  bootstrap
+                </div>
+                <div className="skills rounded-2xl border border-black px-2 py-1 sm:px-4">
+                  wordpress
+                </div>
+              </div>
             </div>
           </div>
         </div>
