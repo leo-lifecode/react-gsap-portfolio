@@ -32,8 +32,8 @@ const AboutMe = () => {
     gsap.from(".skills", {
       scrollTrigger: {
         trigger: "#section2",
-        start: "center",
-        end: "center",
+        start: "top",
+        end: "top",
         once: true,
       },
       y: 100,

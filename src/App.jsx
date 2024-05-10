@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import Overlay from "./components/Overlay";
 import Homepage from "./components/Homepage";
@@ -8,9 +8,22 @@ import TextSpllitOpacity1 from "./components/TextsplitOpacity";
 import AboutMe from "./components/AboutMe";
 import Contacts from "./components/Contacts";
 import Footer from "./components/footer";
+import Project from "./components/Project";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
   const [time, setTime] = useState(gsap.timeline());
+  useGSAP(() => {
+    ScrollTrigger.create({
+      trigger: "#section2",
+      start: "center",
+      pin: true,
+      scrub: 1.5,
+      duration: 1,
+      pinSpacing: false,
+    });
+  });
   return (
     <div id="body" className="m-auto w-full max-w-[1440px] overflow-hidden">
       <Overlay time={time} />
@@ -22,12 +35,8 @@ function App() {
       <section id="section2">
         <AboutMe />
       </section>
-      <div id="section3" className="flex py-[10%] px-[10%]">
-        <div>peoject</div>
-        <div>peoject</div>
-        <div>peoject</div>
-        <div>peoject</div>
-        <div>peoject</div>
+      <div id="section3" className="">
+        <Project />
       </div>
       <section id="section4">
         <Contacts />
