@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#section1{
+#section1 {
   height: 100vh;
 }
 input {
@@ -32,13 +32,13 @@ textarea:focus {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 640px) {
+/* @media screen and (min-width: 640px) {
   section:not(#section4 && #section2) {
     height: 100vh;
     max-width: 1440px;
   }
 
-}
+} */
 
 @font-face {
   font-family: hkgro;
