@@ -26,14 +26,6 @@ const Contacts = () => {
   });
   const handlesubmitform = (e) => {
     e.preventDefault();
-    // const formData = new FormData(e.target);
-    // const data = {
-    //   fName: formData.get("fName"),
-    //   email: formData.get("email"),
-    //   message: formData.get("message"),
-    // };
-    // setform(data);
-
     emailjs
       .sendForm("aselolejos", "template_a5jg57b", formcontact.current, {
         publicKey: "qByr7pGR89bJ6qKww",
@@ -49,11 +41,6 @@ const Contacts = () => {
           setstatus({ ...status, error: "error", success: "" });
         },
       );
-
-    // if (form.message == "" && form.fName == "" && form.email == "") {
-    //   alert("Please fill the form");
-    //   console.log(form);
-    // }
   };
 
   return (
@@ -160,11 +147,7 @@ const Contacts = () => {
               <div className="text-[18px] font-semibold md:text-[22px]">
                 My Digital Social
               </div>
-              <a
-                target="_blank"
-                href="http://github.com/leo-lifecode"
-                className="flex gap-x-2"
-              >
+              <a target="_blank" className="flex gap-x-2">
                 <img src={gthb} alt="" className="w-[15px] md:w-[24px]" />
                 <div className="text-[14px] md:text-[18px]">Github</div>
               </a>
