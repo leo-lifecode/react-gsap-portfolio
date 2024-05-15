@@ -197,8 +197,8 @@ const Navbar = ({ time }) => {
       <ul
         ref={navbar}
         id="containernav"
-        className={`nav ${nav} fixed right-0 top-0 z-[999999] me-3 mt-3 h-[90vh] w-[0] flex-col rounded-[14px] p-[5px] 
-        font-neue text-[35px] font-medium 
+        className={`nav ${nav} font-neue fixed right-0 top-0 z-[999999] me-3 mt-3 h-[90vh] w-[0] flex-col rounded-[14px] 
+        p-[5px] text-[35px] font-medium 
         text-black sm:static sm:mt-0 sm:flex sm:h-max sm:w-full sm:max-w-max 
         sm:flex-row sm:space-x-[10px] sm:bg-transparent sm:text-xl lg:space-x-2`}
       >
@@ -212,28 +212,28 @@ const Navbar = ({ time }) => {
             className="iconnav relative flex  items-start rounded-full p-2 text-left "
           />
         </div>
-        <div className="m-auto flex flex-col items-center justify-center gap-2 overflow-hidden font-neue sm:flex-row sm:gap-5">
+        <div className="font-neue m-auto flex flex-col items-center justify-center gap-2 overflow-hidden sm:flex-row sm:gap-5">
           <li
-            className=" cursor-pointer text-[32px] font-semibold duration-150 sm:text-[24px] md:text-[20px]"
+            className=" text-[32px] font-semibold duration-150 sm:text-[24px] md:text-[20px] cursor-pointer"
             onClick={() => handlegsapscroll("#section1")}
           >
             Home
           </li>
           <li
             onClick={() => handlegsapscroll("#section2")}
-            className=" cursor-pointer text-[32px] font-semibold duration-150 sm:text-[24px] md:text-[20px] "
+            className=" text-[32px] font-semibold duration-150 sm:text-[24px] md:text-[20px] cursor-pointer "
           >
             About
           </li>
           <li
             onClick={() => handlegsapscroll("#section3")}
-            className=" cursor-pointer text-[32px] font-semibold duration-150 sm:text-[24px] md:text-[20px]"
+            className=" text-[32px] font-semibold duration-150 sm:text-[24px] md:text-[20px] cursor-pointer"
           >
             Projects
           </li>
           <li
             onClick={() => handlegsapscroll("#section4")}
-            className=" cursor-pointer text-[32px] font-semibold duration-150 sm:text-[24px] md:text-[20px]"
+            className=" text-[32px] font-semibold duration-150 sm:text-[24px] md:text-[20px] cursor-pointer"
           >
             Contact
           </li>
@@ -263,6 +263,7 @@ const Navbar = ({ time }) => {
           </div>
           <div className="iconsosmed w-[90px] opacity-100">
             <a
+              href="http://github.com/leo-lifecode"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center text-center"

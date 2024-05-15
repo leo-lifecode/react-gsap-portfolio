@@ -46,7 +46,7 @@ const Project = () => {
           </div>
         </div>
         <ContentProject
-          link="commingsoon"
+          link="https://shoply-tnbcommerce.vercel.app/"
           img={project1}
           brand="E-Commerce"
           name="SHOPLY TNB."
@@ -55,7 +55,7 @@ const Project = () => {
           Multi brand e-commerce design system for websites and mobile.
         </ContentProject>
         <ContentProject
-          link="comming soon"
+          link="https://shoply-tnbcommerce.vercel.app/"
           img={project2}
           brand="Music"
           name="Musicly"
@@ -64,7 +64,7 @@ const Project = () => {
           Multi brand e-commerce design system for websites and mobile.
         </ContentProject>
         <ContentProject
-          link="commingsoon"
+          link="https://weather-app-reactweathr.vercel.app/"
           img={project32}
           brand="Weather"
           name="Weather app"
@@ -73,7 +73,7 @@ const Project = () => {
           Multi brand e-commerce design system for websites and mobile.
         </ContentProject>
         <ContentProject
-          link="commingsoon"
+          link="https://todo-list-reactapp-three.vercel.app/"
           img={project4}
           brand="Tasks"
           name="Todo List"
@@ -82,7 +82,7 @@ const Project = () => {
           Multi brand e-commerce design system for websites and mobile.
         </ContentProject>
         <ContentProject
-          link="commingsoon"
+          link="https://nfthouse.vercel.app/"
           img={project5}
           brand="Cyrypto"
           name="NFT HOUSE"

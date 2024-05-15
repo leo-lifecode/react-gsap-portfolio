@@ -6,7 +6,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import emailjs from "@emailjs/browser";
 const Contacts = () => {
-  const [form, setform] = useState([]);
   const formcontact = useRef();
   const [status, setstatus] = useState({ success: "", error: "" });
   const [modal, setmodal] = useState(false);
@@ -26,6 +25,7 @@ const Contacts = () => {
   });
   const handlesubmitform = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm("aselolejos", "template_a5jg57b", formcontact.current, {
         publicKey: "qByr7pGR89bJ6qKww",
@@ -147,7 +147,11 @@ const Contacts = () => {
               <div className="text-[18px] font-semibold md:text-[22px]">
                 My Digital Social
               </div>
-              <a target="_blank" className="flex gap-x-2">
+              <a
+                target="_blank"
+                href="http://github.com/leo-lifecode"
+                className="flex gap-x-2"
+              >
                 <img src={gthb} alt="" className="w-[15px] md:w-[24px]" />
                 <div className="text-[14px] md:text-[18px]">Github</div>
               </a>
