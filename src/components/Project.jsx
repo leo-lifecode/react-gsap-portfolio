@@ -76,7 +76,7 @@ const Project = () => {
         <ContentProject
           text="projecttexttwo"
           id="projecttwo"
-          link="https://shoply-tnbcommerce.vercel.app/"
+          link=""
           img={project2}
           brand="Music"
           name="Musicly"
