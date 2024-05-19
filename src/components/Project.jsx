@@ -36,10 +36,9 @@ const Project = () => {
     gsap.to("#section_1", {
       scrollTrigger: {
         trigger: "#lastProject",
-        start: "center",
+        start: "top center",
         end: "bottom",
         scrub: 1,
-        markers: true,
       },
       scale: 0.95,
     });
