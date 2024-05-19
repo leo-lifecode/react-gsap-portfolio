@@ -15,7 +15,6 @@ const Project = () => {
       scrollTrigger: {
         trigger: "#section2",
         start: "+=100",
-        end: "+=100",
         scrub: 1,
         markers: true,
       },
