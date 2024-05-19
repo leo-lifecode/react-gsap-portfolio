@@ -15,7 +15,9 @@ const Project = () => {
       scrollTrigger: {
         trigger: "#section2",
         start: "+=100",
-        scrub: 0.5,
+        end: "+=100",
+        scrub: 1,
+        markers: true,
       },
       y: 300,
     });
@@ -37,7 +39,8 @@ const Project = () => {
       scrollTrigger: {
         trigger: "#lastProject",
         start: "top",
-        scrub: 0.5,
+        scrub: 1,
+        markers: true,
       },
       scale: 0.95,
     });
