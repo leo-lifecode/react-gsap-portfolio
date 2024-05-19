@@ -7,8 +7,13 @@ import project2 from "../assets/images/project2.png";
 import project32 from "../assets/images/project32.png";
 import project4 from "../assets/images/project4.png";
 import project5 from "../assets/images/project5.png";
+import { useEffect } from "react";
 const Project = () => {
   gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    ScrollTrigger.refresh();
+  }, []);
 
   useGSAP(() => {
     gsap.from("#section_1", {
