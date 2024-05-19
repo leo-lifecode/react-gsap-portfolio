@@ -11,9 +11,7 @@ import { useEffect } from "react";
 const Project = () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
-    ScrollTrigger.refresh();
-  }, []);
+  useEffect(() => {}, []);
 
   useGSAP(() => {
     gsap.from("#section_1", {
@@ -42,7 +40,7 @@ const Project = () => {
     gsap.to("#section_1", {
       scrollTrigger: {
         trigger: "#lastProject",
-        start: "center",
+        start: "bottom",
         end: "bottom",
         scrub: 1,
         markers: true,
@@ -59,6 +57,7 @@ const Project = () => {
       y: 200,
     });
   });
+  
   return (
     <div
       id="section_1"
