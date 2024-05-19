@@ -16,9 +16,8 @@ const Project = () => {
         trigger: "#section2",
         start: "+=100",
         scrub: 1,
-        markers: true,
       },
-      y: 300,
+      y: 200,
     });
     gsap.from(
       ".text-project",
@@ -37,7 +36,7 @@ const Project = () => {
     gsap.to("#section_1", {
       scrollTrigger: {
         trigger: "#lastProject",
-        start: "top",
+        start: "center",
         scrub: 1,
         markers: true,
       },
