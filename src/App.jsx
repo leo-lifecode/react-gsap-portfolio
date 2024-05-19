@@ -35,7 +35,7 @@ function App() {
       <section id="section2">
         <AboutMe />
       </section>
-      <div id="section3" className="">
+      <div id="section3" className="mt-[100px]">
         <Project />
       </div>
       <section id="section4">
