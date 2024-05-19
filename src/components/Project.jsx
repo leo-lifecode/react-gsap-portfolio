@@ -7,11 +7,8 @@ import project2 from "../assets/images/project2.png";
 import project32 from "../assets/images/project32.png";
 import project4 from "../assets/images/project4.png";
 import project5 from "../assets/images/project5.png";
-import { useEffect } from "react";
 const Project = () => {
   gsap.registerPlugin(ScrollTrigger);
-
-  useEffect(() => {}, []);
 
   useGSAP(() => {
     gsap.from("#section_1", {
@@ -19,7 +16,6 @@ const Project = () => {
         trigger: "#section2",
         start: "+=100",
         scrub: 1,
-        markers: true,
       },
       y: 300,
     });
@@ -40,7 +36,7 @@ const Project = () => {
     gsap.to("#section_1", {
       scrollTrigger: {
         trigger: "#lastProject",
-        start: "bottom",
+        start: "center",
         end: "bottom",
         scrub: 1,
         markers: true,
@@ -57,7 +53,7 @@ const Project = () => {
       y: 200,
     });
   });
-  
+
   return (
     <div
       id="section_1"
