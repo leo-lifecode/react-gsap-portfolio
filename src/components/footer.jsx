@@ -103,7 +103,7 @@ function Footer() {
           </div>
           <div className="col-span-2 flex flex-col md:col-span-3 lg:col-span-3">
             <span className="link-text border-accent-500 text-secondary-300 mb-3 flex border-b-[1.5px] pb-1  font-bold uppercase">
-              Projects
+              Location
             </span>
             <div className="flex flex-col gap-y-2 md:gap-y-1">
               <div className="link-text ledivding-base text-secondary-100 group relative block h-fit w-fit overflow-hidden font-medium">

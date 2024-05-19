@@ -85,7 +85,7 @@ const Homepage = ({ time }) => {
               <text
                 style={{
                   fontSize: "14px",
-                  letterSpacing: "3.9px",
+                  letterSpacing: "4.1px",
                   fill: "#000",
                 }}
               >
