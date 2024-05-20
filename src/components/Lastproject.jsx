@@ -47,7 +47,7 @@ function Lastproject() {
           <div className="overflow-hidden text-[42px] font-semibold capitalize sm:text-[68px] lg:text-[58px] xl:text-[72px]">
             <p id="textfive">NFT HOUSE</p>
           </div>
-          <div className="overflow-hidden text-[18px] text-gray-500 sm:text-[18px]">
+          <div className="overflow-hidden text-[20px] text-gray-500 sm:text-[18px]">
             <a
               href="https://nft-house.vercel.app"
               target="_blank"

@@ -40,7 +40,7 @@ const ContentProject = ({
             </div>
           </a>
         </div>
-        <div className=" my-[4px] flex gap-x-1 overflow-hidden text-[18px] font-medium sm:my-[12px] sm:text-[28px] lg:text-[24px] xl:gap-x-[12px] xl:text-[32px]">
+        <div className=" my-[4px] flex gap-x-1 overflow-hidden text-[20px] font-medium sm:my-[12px] sm:text-[28px] lg:text-[24px] xl:gap-x-[12px] xl:text-[32px]">
           <div id={text}>{brand}</div>
           <div id={text}>•</div>
           <div id={text}>Front-end developer</div>
