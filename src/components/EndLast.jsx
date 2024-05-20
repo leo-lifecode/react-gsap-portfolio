@@ -8,14 +8,13 @@ export default function EndLast() {
   useGSAP(() => {
     gsap.to("#section_1", {
       scrollTrigger: {
-        trigger: "#end-last",
+        trigger: "#endlast",
         start: "-=120",
         end: "+=320",
         scrub: 1,
-        markers: true,
       },
       scale: 0.95,
     });
   });
-  return <div id="end-last"></div>;
+  return <div id="endlast"></div>;
 }
