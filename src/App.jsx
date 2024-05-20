@@ -30,11 +30,11 @@ function App() {
       pinSpacing: false,
     });
 
-    gsap.to(last.current, {
+    gsap.to("#section_1", {
       scrollTrigger: {
         trigger: last.current,
-        start: "top",
-        end: "bottom",
+        start: "-=230",
+        end: "+=230",
         scrub: 1,
         markers: true,
       },
