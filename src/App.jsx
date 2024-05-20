@@ -19,12 +19,22 @@ function App() {
     ScrollTrigger.create({
       trigger: "#section2",
       start: "center",
-      end:"+=800",
+      // end: "+=800",
       pin: true,
       scrub: 1.5,
       duration: 1,
       pinSpacing: false,
-      markers: true,
+    });
+
+    gsap.to("#section_1", {
+      scrollTrigger: {
+        trigger: "#endlast",
+        start: "-=120",
+        end: "+=320",
+        scrub: 1,
+        markers: true,
+      },
+      scale: 0.95,
     });
   });
   return (
@@ -40,7 +50,7 @@ function App() {
       </section>
       <div id="section3" className="">
         <Project />
-        <EndLast />
+        <div id="endlast"></div>
       </div>
       <section id="section4" className="mt-[320px]">
         <Contacts />
