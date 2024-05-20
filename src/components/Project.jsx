@@ -11,6 +11,7 @@ import { useRef } from "react";
 const Project = () => {
   gsap.registerPlugin(ScrollTrigger);
   const contaproject = useRef();
+  const contlastproject = useRef();
   const lastproject = useRef();
   useGSAP(() => {
     gsap.from(contaproject.current, {
@@ -35,13 +36,14 @@ const Project = () => {
       },
       "+=1.5",
     );
-    gsap.to(contaproject.current, {
+    gsap.to(contlastproject.current, {
       scrollTrigger: {
-        trigger: lastproject.current,
-        start: "center center",
-        end: "bottom",
-        scrub: 1,
+        trigger: contlastproject.current,
+        start: "center",
+        scrub: 0.5,
+        markers: true,
       },
+      y: -50,
       scale: 0.95,
     });
 
@@ -56,64 +58,71 @@ const Project = () => {
   });
 
   return (
-    <div
-      ref={contaproject}
-      id="section_1"
-      className="relative z-[99] flex rounded-3xl bg-black px-[1.5rem] py-[3.5rem] sm:px-[4%] sm:py-[5%]"
-    >
-      <div className="w-full text-[#d1d1c7]">
-        <div className="overflow-hidden font-neue text-[38px] font-bold uppercase leading-[1.2] sm:text-[84px] lg:text-[96px]">
-          <div className="text-project border-b-2 border-white pb-2 sm:pb-3 lg:pb-6">
-            My Project
+    <div>
+      <div
+        ref={contaproject}
+        id="section_1"
+        className="relative z-[99] flex rounded-t-3xl bg-black px-[1.5rem] py-[3.5rem] sm:px-[4%] sm:py-[5%]"
+      >
+        <div className="w-full text-[#d1d1c7]">
+          <div className="overflow-hidden font-neue text-[38px] font-bold uppercase leading-[1.2] sm:text-[84px] lg:text-[96px]">
+            <div className="text-project border-b-2 border-white pb-2 sm:pb-3 lg:pb-6">
+              My Project
+            </div>
           </div>
+          <ContentProject
+            text="projecttextone"
+            id="projectone"
+            link="https://shoply-tnbcommerce.vercel.app/"
+            img={project1}
+            brand="E-Commerce"
+            name="SHOPLY TNB."
+            stylecustom=""
+          >
+            Multi brand e-commerce design system for websites and mobile.
+          </ContentProject>
+          <ContentProject
+            text="projecttexttwo"
+            id="projecttwo"
+            link=""
+            img={project2}
+            brand="Music"
+            name="Musicly"
+            stylecustom=""
+          >
+            music products with features like responsive design, intuitive
+            navigation, and efficient product categorization
+          </ContentProject>
+          <ContentProject
+            text="projecttextthree"
+            id="projectthree"
+            link="https://weather-app-reactweathr.vercel.app/"
+            img={project32}
+            brand="Weather"
+            name="Weather app"
+            stylecustom=""
+          >
+            The Weather App is a web application that delivers real-time weather
+            updates.
+          </ContentProject>
+          <ContentProject
+            text="projecttextfour"
+            id="projectfour"
+            link="https://todo-list-reactapp-three.vercel.app/"
+            img={project4}
+            brand="Tasks"
+            name="Todo List"
+            stylecustom=""
+          >
+            The Todo List project is a responsive React web app for managing
+            tasks, featuring task categorization, due dates, and prioritization.
+          </ContentProject>
         </div>
-        <ContentProject
-          text="projecttextone"
-          id="projectone"
-          link="https://shoply-tnbcommerce.vercel.app/"
-          img={project1}
-          brand="E-Commerce"
-          name="SHOPLY TNB."
-          stylecustom=""
-        >
-          Multi brand e-commerce design system for websites and mobile.
-        </ContentProject>
-        <ContentProject
-          text="projecttexttwo"
-          id="projecttwo"
-          link=""
-          img={project2}
-          brand="Music"
-          name="Musicly"
-          stylecustom=""
-        >
-          music products with features like responsive design, intuitive
-          navigation, and efficient product categorization
-        </ContentProject>
-        <ContentProject
-          text="projecttextthree"
-          id="projectthree"
-          link="https://weather-app-reactweathr.vercel.app/"
-          img={project32}
-          brand="Weather"
-          name="Weather app"
-          stylecustom=""
-        >
-          The Weather App is a web application that delivers real-time weather
-          updates.
-        </ContentProject>
-        <ContentProject
-          text="projecttextfour"
-          id="projectfour"
-          link="https://todo-list-reactapp-three.vercel.app/"
-          img={project4}
-          brand="Tasks"
-          name="Todo List"
-          stylecustom=""
-        >
-          The Todo List project is a responsive React web app for managing
-          tasks, featuring task categorization, due dates, and prioritization.
-        </ContentProject>
+      </div>
+      <div
+        ref={contlastproject}
+        className="mt-[-5px] rounded-b-3xl bg-black px-[1.5rem] py-[3.5rem] text-[#d1d1c7] sm:px-[4%] sm:py-[5%]"
+      >
         <div
           ref={lastproject}
           id="lastProject"
