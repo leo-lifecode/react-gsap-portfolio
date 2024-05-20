@@ -41,7 +41,6 @@ const Project = () => {
         trigger: contlastproject.current,
         start: "center",
         scrub: 0.5,
-        markers: true,
       },
       y: -50,
       scale: 0.95,
