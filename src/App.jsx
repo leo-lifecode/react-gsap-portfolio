@@ -53,7 +53,7 @@ function App() {
       </section>
       <div id="section3" className="mt-[100px]" ref={sectproject}>
         <Project />
-        <div ref={secthelotest}>hello</div>
+        <div ref={secthelotest}></div>
       </div>
       <section id="section4" className="mt-[320px]">
         <Contacts />
