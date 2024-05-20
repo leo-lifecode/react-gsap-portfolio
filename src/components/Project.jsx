@@ -26,11 +26,11 @@ const Project = () => {
       {
         scrollTrigger: {
           trigger: contaproject.current,
-          start: "-=400",
+          start: "-=550",
         },
         y: 300,
 
-        duration: 0.9,
+        duration: 0.7,
         ease: "power3.inOut",
       },
       "+=1.5",
@@ -50,11 +50,7 @@ const Project = () => {
               My Project
             </div>
           </div>
-          <div className="h-[370px]">hello</div>
-          <div className="h-[370px]">hello</div>
-          <div className="h-[370px]">hello</div>
-          <div className="h-[370px]">hello</div>
-          {/* <ContentProject
+          <ContentProject
             text="projecttextone"
             id="projectone"
             link="https://shoply-tnbcommerce.vercel.app/"
@@ -100,10 +96,9 @@ const Project = () => {
           >
             The Todo List project is a responsive React web app for managing
             tasks, featuring task categorization, due dates, and prioritization.
-          </ContentProject> */}
+          </ContentProject>
         </div>
       </div>
-
       <Lastproject />
     </div>
   );

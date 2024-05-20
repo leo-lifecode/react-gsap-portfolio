@@ -5,24 +5,22 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import project5 from "../assets/images/project5.png";
 
 function Lastproject() {
-  gsap.registerPlugin(ScrollTrigger);
-
   const contlastproject = useRef(null);
   const lastproject = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
     gsap.to(contlastproject.current, {
       scrollTrigger: {
         trigger: lastproject.current,
-        start: "top",
-        end: "bottom",
+        start: "bottom",
+        end: "+=100",
         scrub: 0.5,
         markers: true,
       },
       y: -50,
       scale: 0.95,
     });
-
     gsap.from(`#textfive`, {
       scrollTrigger: {
         trigger: lastproject.current,
@@ -80,9 +78,7 @@ function Lastproject() {
           </a>
         </div>
       </div>
-      <div ref={lastproject} className="h-[100px] w-full bg-green-500">
-        hello
-      </div>
+      <div ref={lastproject}></div>
     </div>
   );
 }
