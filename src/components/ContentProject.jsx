@@ -52,9 +52,14 @@ const ContentProject = ({
         </div>
       </div>
       <div className="col-span-12 me-[-50%]  overflow-hidden rounded-2xl border-2 border-white lg:col-span-7 lg:me-[-35%] xl:me-[-50%]">
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <img src={img} className="" />
-        </a>
+        <div className="h-[249px] w-[404px] sm:h-[531px] sm:w-[861px] lg:h-[448px] lg:w-[726] xl:h-[531px] xl:w-[861px]">
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={img}
+              className="h-[249px] w-[404px] sm:h-[531px] sm:w-[861px] lg:h-[448px] lg:w-[726] xl:h-[531px] xl:w-[861px]"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
