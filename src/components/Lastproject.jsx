@@ -41,7 +41,7 @@ function Lastproject() {
       <div
         ref={lastproject}
         id="lastProject"
-        className="grid grid-cols-12 items-center gap-[12px] overflow-hidden py-[100px] font-neue lg:gap-[20px]"
+        className="relative grid grid-cols-12 items-center gap-[12px] overflow-hidden py-[100px] font-neue lg:gap-[20px]"
       >
         <div className="col-span-12 lg:col-span-5">
           <div className="overflow-hidden text-[42px] font-semibold capitalize sm:text-[68px] lg:text-[58px] xl:text-[72px]">

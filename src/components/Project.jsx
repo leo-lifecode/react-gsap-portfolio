@@ -50,7 +50,7 @@ const Project = () => {
               My Project
             </div>
           </div>
-          {/* <ContentProject
+          <ContentProject
             text="projecttextone"
             id="projectone"
             link="https://shoply-tnbcommerce.vercel.app/"
@@ -96,7 +96,7 @@ const Project = () => {
           >
             The Todo List project is a responsive React web app for managing
             tasks, featuring task categorization, due dates, and prioritization.
-          </ContentProject> */}
+          </ContentProject>
         </div>
       </div>
       <Lastproject />
