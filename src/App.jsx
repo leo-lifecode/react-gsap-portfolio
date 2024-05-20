@@ -13,32 +13,6 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
-  useEffect(() => {
-    let timeoutId;
-
-    const handleResize = () => {
-      // Clear any existing timeout
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-
-      // Set a new timeout to reload the window after a delay
-      timeoutId = setTimeout(() => {
-        window.location.reload();
-      }, 1000); // Delay of 1000 milliseconds (1 second)
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup the event listener and timeout on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-    };
-  }, []);
-
   const [time, setTime] = useState(gsap.timeline());
   useGSAP(() => {
     ScrollTrigger.create({
