@@ -17,6 +17,7 @@ function App() {
   // const time = useRef(gsap.timeline());
   const last = useRef(null);
   const containerproject = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
     ScrollTrigger.create({
@@ -29,7 +30,6 @@ function App() {
       pinSpacing: false,
     });
 
-    gsap.registerPlugin(ScrollTrigger);
     gsap.to(last.current, {
       scrollTrigger: {
         trigger: last.current,
