@@ -24,7 +24,7 @@ const Project = () => {
       {
         scrollTrigger: {
           trigger: "#section_1",
-          start: "-=600",
+          start: "-=400",
         },
         y: 300,
 
@@ -37,8 +37,9 @@ const Project = () => {
     gsap.to("#section_1", {
       scrollTrigger: {
         trigger: "#lastProject",
-        start: "center",
+        start: "+=100",
         scrub: 1,
+        markers: true,
       },
       scale: 0.95,
     });

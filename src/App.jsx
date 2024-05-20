@@ -14,9 +14,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
   const [time, setTime] = useState(gsap.timeline());
-  // const time = useRef(gsap.timeline());
-  const last = useRef(null);
-  const containerproject = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
@@ -29,17 +26,6 @@ function App() {
       duration: 1,
       pinSpacing: false,
     });
-
-    // gsap.to(last.current, {
-    //   scrollTrigger: {
-    //     trigger: last.current,
-    //     start: "-=230",
-    //     end: "+=230",
-    //     scrub: 1,
-    //     markers: true,
-    //   },
-    //   y: 230,
-    // });
   });
 
   return (
@@ -53,7 +39,7 @@ function App() {
       <section id="section2">
         <AboutMe />
       </section>
-      <div id="section3" className="te" ref={containerproject}>
+      <div id="section3" className="mt-[100px]">
         <Project />
         {/* <div
           id="endlast"

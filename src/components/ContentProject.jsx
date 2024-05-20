@@ -17,10 +17,10 @@ const ContentProject = ({
     gsap.from(`#${text}`, {
       scrollTrigger: {
         trigger: `#${id}`,
-        start: "-=380",
+        start: "-=280",
       },
-      stagger: 0.023,
-      duration: 0.5,
+      stagger: 0.02,
+      duration: 0.3,
       y: 200,
     });
   });
