@@ -53,7 +53,7 @@ function App() {
       <section id="section2">
         <AboutMe />
       </section>
-      <div id="section3" className="" ref={containerproject}>
+      <div id="section3" className="te" ref={containerproject}>
         <Project />
         <div id="endlast" ref={last}></div>
       </div>
