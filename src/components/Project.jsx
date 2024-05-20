@@ -40,7 +40,6 @@ const Project = () => {
         trigger: lastproject.current,
         start: "center center",
         end: "bottom",
-        markers: true,
         scrub: 1,
       },
       scale: 0.95,
