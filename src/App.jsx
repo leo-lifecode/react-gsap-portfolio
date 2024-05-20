@@ -30,16 +30,16 @@ function App() {
       pinSpacing: false,
     });
 
-    gsap.to(last.current, {
-      scrollTrigger: {
-        trigger: last.current,
-        start: "-=230",
-        end: "+=230",
-        scrub: 1,
-        markers: true,
-      },
-      y: 230,
-    });
+    // gsap.to(last.current, {
+    //   scrollTrigger: {
+    //     trigger: last.current,
+    //     start: "-=230",
+    //     end: "+=230",
+    //     scrub: 1,
+    //     markers: true,
+    //   },
+    //   y: 230,
+    // });
   });
 
   return (
@@ -55,13 +55,13 @@ function App() {
       </section>
       <div id="section3" className="te" ref={containerproject}>
         <Project />
-        <div
+        {/* <div
           id="endlast"
           className="h-[100px] w-[100px] bg-green-500"
           ref={last}
         >
           hello
-        </div>
+        </div> */}
       </div>
       <section id="section4" className="">
         <Contacts />
