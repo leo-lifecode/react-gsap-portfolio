@@ -27,15 +27,15 @@ function App() {
       pinSpacing: false,
     });
 
-    gsap.to("#section_1", {
+    gsap.to(last.current, {
       scrollTrigger: {
-        trigger: "#endlast",
+        trigger: last.current,
         start: "top",
         end: "bottom",
         scrub: 1,
         markers: true,
       },
-      scale: 0.95,
+      y: 200,
     });
   });
 
@@ -54,7 +54,7 @@ function App() {
         <Project />
         <div id="endlast" ref={last}></div>
       </div>
-      <section id="section4" className="mt-[320px]">
+      <section id="section4" className="">
         <Contacts />
       </section>
       <div id="section5">
