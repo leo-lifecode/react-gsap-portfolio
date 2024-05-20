@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 import Overlay from "./components/Overlay";
 import Homepage from "./components/Homepage";
@@ -13,6 +13,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
+  const sectproject = useRef();
   const [time, setTime] = useState(gsap.timeline());
   useGSAP(() => {
     ScrollTrigger.create({
@@ -35,7 +36,7 @@ function App() {
       <section id="section2">
         <AboutMe />
       </section>
-      <div id="section3" className="mt-[100px]">
+      <div id="section3" className="mt-[100px]" ref={sectproject}>
         <Project />
       </div>
       <section id="section4">
