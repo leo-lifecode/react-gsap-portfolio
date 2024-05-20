@@ -72,7 +72,7 @@ const Project = () => {
           text="projecttextone"
           id="projectone"
           link="https://shoply-tnbcommerce.vercel.app/"
-          img={project1}
+          img={"project1"}
           brand="E-Commerce"
           name="SHOPLY TNB."
           stylecustom=""
@@ -83,7 +83,7 @@ const Project = () => {
           text="projecttexttwo"
           id="projecttwo"
           link=""
-          img={project2}
+          img={"project2"}
           brand="Music"
           name="Musicly"
           stylecustom=""
@@ -95,7 +95,7 @@ const Project = () => {
           text="projecttextthree"
           id="projectthree"
           link="https://weather-app-reactweathr.vercel.app/"
-          img={project32}
+          img={"project32"}
           brand="Weather"
           name="Weather app"
           stylecustom=""
@@ -107,7 +107,7 @@ const Project = () => {
           text="projecttextfour"
           id="projectfour"
           link="https://todo-list-reactapp-three.vercel.app/"
-          img={project4}
+          img={"project4"}
           brand="Tasks"
           name="Todo List"
           stylecustom=""
@@ -153,7 +153,7 @@ const Project = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={project5} className="" />
+              <img src={"project5"} className="" />
             </a>
           </div>
         </div>
