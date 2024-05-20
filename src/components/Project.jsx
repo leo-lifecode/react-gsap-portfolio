@@ -37,15 +37,15 @@ const Project = () => {
       "+=1.5",
     );
 
-    gsap.to(containerproject.current, {
-      scrollTrigger: {
-        trigger: lastProject.current,
-        start: "center",
-        scrub: 1,
-        // markers: true,
-      },
-      scale: 0.95,
-    });
+    // gsap.to(containerproject.current, {
+    //   scrollTrigger: {
+    //     trigger: lastProject.current,
+    //     start: "center",
+    //     scrub: 1,
+    //     // markers: true,
+    //   },
+    //   scale: 0.95,
+    // });
 
     gsap.from(`#textfive`, {
       scrollTrigger: {

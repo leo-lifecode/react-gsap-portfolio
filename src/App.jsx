@@ -13,8 +13,8 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
+  const [time, setTime] = useState(gsap.timeline());
   const sectproject = useRef();
-  const time = useRef(gsap.timeline());
   const secthelotest = useRef();
 
   gsap.registerPlugin(ScrollTrigger);
@@ -29,22 +29,23 @@ function App() {
       pinSpacing: false,
     });
 
-    gsap.to(secthelotest.current, {
+    gsap.to("#section_1", {
       scrollTrigger: {
         trigger: secthelotest.current,
         start: "top",
-        end: "bottom",
+        end: "+=320",
+        scrub: 1,
         markers: true,
       },
-      y: 200,
+      scale: 0.95,
     });
   });
   return (
     <div id="body" className="m-auto w-full max-w-[1440px] overflow-hidden">
-      <Overlay time={time.current} />
+      <Overlay time={time} />
       <section id="section1" className="flex flex-col">
-        <Navbar time={time.current} />
-        <Homepage time={time.current} />
+        <Navbar time={time} />
+        <Homepage time={time} />
       </section>
       <TextSpllitOpacity1 />
       <section id="section2">
@@ -52,11 +53,9 @@ function App() {
       </section>
       <div id="section3" className="mt-[100px]" ref={sectproject}>
         <Project />
-        <div className="h-[100px] w-[100px] bg-green-400" ref={secthelotest}>
-          hello
-        </div>
+        <div ref={secthelotest}>hello</div>
       </div>
-      <section id="section4">
+      <section id="section4" className="mt-[320px]">
         <Contacts />
       </section>
       <div id="section5">
