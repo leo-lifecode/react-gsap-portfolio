@@ -41,6 +41,7 @@ const Project = () => {
         start: "center center",
         end: "bottom",
         scrub: 1,
+        markers:true,
       },
       scale: 0.95,
     });
