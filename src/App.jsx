@@ -20,7 +20,6 @@ function App() {
     ScrollTrigger.create({
       trigger: "#section2",
       start: "center",
-      // end: "+=800",
       pin: true,
       scrub: 1.5,
       duration: 1,
@@ -41,13 +40,6 @@ function App() {
       </section>
       <div id="section3" className="mt-[100px]">
         <Project />
-        {/* <div
-          id="endlast"
-          className="h-[100px] w-[100px] bg-green-500"
-          ref={last}
-        >
-          hello
-        </div> */}
       </div>
       <section id="section4" className="">
         <Contacts />

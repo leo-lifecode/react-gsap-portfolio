@@ -39,7 +39,6 @@ const Project = () => {
         trigger: "#lastProject",
         start: "+=100",
         scrub: 1,
-        markers: true,
       },
       scale: 0.95,
     });
