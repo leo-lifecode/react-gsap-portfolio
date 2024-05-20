@@ -41,8 +41,7 @@ const Project = () => {
     gsap.to(containerproject.current, {
       scrollTrigger: {
         trigger: contlastproject.current,
-        start: "+=100",
-        end: "-=100",
+        start: "-=200",
         scrub: 1,
         markers: true,
       },
