@@ -38,7 +38,7 @@ function App() {
         scrub: 1,
         markers: true,
       },
-      y: 200,
+      scale: 0.95,
     });
   });
 
