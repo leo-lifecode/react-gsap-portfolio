@@ -7,13 +7,10 @@ import project2 from "../assets/images/project2.png";
 import project32 from "../assets/images/project32.png";
 import project4 from "../assets/images/project4.png";
 import project5 from "../assets/images/project5.png";
-import { useRef } from "react";
 const Project = () => {
   gsap.registerPlugin(ScrollTrigger);
-  const lastProject = useRef();
-  const containerproject = useRef();
   useGSAP(() => {
-    gsap.from(containerproject.current, {
+    gsap.from("#section_1", {
       scrollTrigger: {
         trigger: "#section2",
         start: "+=100",
@@ -26,7 +23,7 @@ const Project = () => {
       ".text-project",
       {
         scrollTrigger: {
-          trigger: containerproject.current,
+          trigger: "#section_1",
           start: "-=600",
         },
         y: 300,
@@ -49,7 +46,7 @@ const Project = () => {
 
     gsap.from(`#textfive`, {
       scrollTrigger: {
-        trigger: lastProject.current,
+        trigger: "#lastProject",
         start: "-=340",
       },
       stagger: 0.023,
@@ -58,7 +55,6 @@ const Project = () => {
   });
   return (
     <div
-      ref={containerproject}
       id="section_1"
       className="relative z-[99] flex rounded-3xl bg-black px-[1.5rem] py-[3.5rem] sm:px-[4%] sm:py-[5%]"
     >
@@ -116,7 +112,6 @@ const Project = () => {
           tasks, featuring task categorization, due dates, and prioritization.
         </ContentProject>
         <div
-          ref={lastProject}
           id="lastProject"
           className="grid grid-cols-12 items-center gap-[12px] overflow-hidden py-[100px] font-neue lg:gap-[20px]"
         >
