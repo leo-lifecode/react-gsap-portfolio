@@ -11,33 +11,20 @@ import Footer from "./components/footer";
 import Project from "./components/Project";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import EndLast from "./components/EndLast";
 
 function App() {
   const [time, setTime] = useState(gsap.timeline());
-  const sectproject = useRef();
-  const secthelotest = useRef();
-
-  gsap.registerPlugin(ScrollTrigger);
-
   useGSAP(() => {
     ScrollTrigger.create({
       trigger: "#section2",
       start: "center",
+      end:"+=800",
       pin: true,
       scrub: 1.5,
       duration: 1,
       pinSpacing: false,
-    });
-
-    gsap.to("#section_1", {
-      scrollTrigger: {
-        trigger: secthelotest.current,
-        start: "top",
-        end: "+=320",
-        scrub: 1,
-        markers: true,
-      },
-      scale: 0.95,
+      markers: true,
     });
   });
   return (
@@ -51,9 +38,9 @@ function App() {
       <section id="section2">
         <AboutMe />
       </section>
-      <div id="section3" className="mt-[100px]" ref={sectproject}>
+      <div id="section3" className="">
         <Project />
-        <div ref={secthelotest}></div>
+        <EndLast />
       </div>
       <section id="section4" className="mt-[320px]">
         <Contacts />
