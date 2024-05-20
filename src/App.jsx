@@ -15,7 +15,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 function App() {
   const sectproject = useRef();
   const time = useRef(gsap.timeline());
-  console.log(time)
+  const secthelotest = useRef();
+
+  gsap.registerPlugin(ScrollTrigger);
+
   useGSAP(() => {
     ScrollTrigger.create({
       trigger: "#section2",
@@ -24,6 +27,16 @@ function App() {
       scrub: 1.5,
       duration: 1,
       pinSpacing: false,
+    });
+
+    gsap.to(secthelotest.current, {
+      scrollTrigger: {
+        trigger: secthelotest.current,
+        start: "top",
+        end: "bottom",
+        markers: true,
+      },
+      y: 200,
     });
   });
   return (
@@ -39,6 +52,9 @@ function App() {
       </section>
       <div id="section3" className="mt-[100px]" ref={sectproject}>
         <Project />
+        <div className="h-[100px] w-[100px] bg-green-400" ref={secthelotest}>
+          hello
+        </div>
       </div>
       <section id="section4">
         <Contacts />
