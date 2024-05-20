@@ -14,7 +14,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
   const sectproject = useRef();
-  const [time, setTime] = useState(gsap.timeline());
+  const time = useRef(gsap.timeline());
+  console.log(time)
   useGSAP(() => {
     ScrollTrigger.create({
       trigger: "#section2",
@@ -27,10 +28,10 @@ function App() {
   });
   return (
     <div id="body" className="m-auto w-full max-w-[1440px] overflow-hidden">
-      <Overlay time={time} />
+      <Overlay time={time.current} />
       <section id="section1" className="flex flex-col">
-        <Navbar time={time} />
-        <Homepage time={time} />
+        <Navbar time={time.current} />
+        <Homepage time={time.current} />
       </section>
       <TextSpllitOpacity1 />
       <section id="section2">
