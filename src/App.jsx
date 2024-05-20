@@ -14,7 +14,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
   const [time, setTime] = useState(gsap.timeline());
-  const last = useRef();
+  const last = useRef(null);
+  const containerproject = useRef(null);
   useGSAP(() => {
     ScrollTrigger.create({
       trigger: "#section2",
@@ -37,6 +38,7 @@ function App() {
       scale: 0.95,
     });
   });
+
   return (
     <div id="body" className="m-auto w-full max-w-[1440px] overflow-hidden">
       <Overlay time={time} />
@@ -48,7 +50,7 @@ function App() {
       <section id="section2">
         <AboutMe />
       </section>
-      <div id="section3" className="">
+      <div id="section3" className="" ref={containerproject}>
         <Project />
         <div id="endlast" ref={last}></div>
       </div>
@@ -58,6 +60,7 @@ function App() {
       <div id="section5">
         <Footer />
       </div>
+      <div>hello</div>
     </div>
   );
 }
