@@ -38,11 +38,11 @@ const Project = () => {
       "+=1.5",
     );
 
-    gsap.to(contlastproject.current, {
+    gsap.to(containerproject.current, {
       scrollTrigger: {
-        trigger: lastProject.current,
-        start: "bottom",
-        end: "bottom",
+        trigger: contlastproject.current,
+        start: "+=100",
+        end: "-=100",
         scrub: 1,
         markers: true,
       },
@@ -59,18 +59,18 @@ const Project = () => {
     });
   });
   return (
-    <div
-      ref={containerproject}
-      id="section_1"
-      className="relative z-[99] flex rounded-3xl bg-black px-[1.5rem] py-[3.5rem] sm:px-[4%] sm:py-[5%]"
-    >
-      <div className="w-full text-[#d1d1c7]">
-        <div className="overflow-hidden font-neue text-[38px] font-bold uppercase leading-[1.2] sm:text-[84px] lg:text-[96px]">
-          <div className="text-project border-b-2 border-white pb-2 sm:pb-3 lg:pb-6">
-            My Project
+    <>
+      <div
+        ref={containerproject}
+        id="section_1"
+        className="relative z-[99] flex rounded-3xl bg-black px-[1.5rem] py-[3.5rem] sm:px-[4%] sm:py-[5%]"
+      >
+        <div className="w-full text-[#d1d1c7]">
+          <div className="overflow-hidden font-neue text-[38px] font-bold uppercase leading-[1.2] sm:text-[84px] lg:text-[96px]">
+            <div className="text-project border-b-2 border-white pb-2 sm:pb-3 lg:pb-6">
+              My Project
+            </div>
           </div>
-        </div>
-        <div ref={contlastproject}>
           <ContentProject
             text="projecttextone"
             id="projectone"
@@ -162,7 +162,8 @@ const Project = () => {
           </div>
         </div>
       </div>
-    </div>
+      <div ref={contlastproject}></div>
+    </>
   );
 };
 
