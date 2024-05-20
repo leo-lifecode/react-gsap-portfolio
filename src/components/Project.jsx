@@ -24,7 +24,7 @@ const Project = () => {
       {
         scrollTrigger: {
           trigger: "#section_1",
-          start: "-=400",
+          start: "-=700",
         },
         y: 300,
 
@@ -47,7 +47,7 @@ const Project = () => {
     gsap.from(`#textfive`, {
       scrollTrigger: {
         trigger: "#lastProject",
-        start: "-=340",
+        start: "-=540",
       },
       stagger: 0.023,
       y: 200,

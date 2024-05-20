@@ -17,7 +17,7 @@ const ContentProject = ({
     gsap.from(`#${text}`, {
       scrollTrigger: {
         trigger: `#${id}`,
-        start: "-=280",
+        start: "-=480",
       },
       stagger: 0.02,
       duration: 0.3,
