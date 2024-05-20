@@ -7,14 +7,14 @@ import project5 from "../assets/images/project5.png";
 function Lastproject() {
   gsap.registerPlugin(ScrollTrigger);
 
-  const contlastproject = useRef();
-  const lastproject = useRef();
+  const contlastproject = useRef(null);
+  const lastproject = useRef(null);
 
   useGSAP(() => {
     gsap.to(contlastproject.current, {
       scrollTrigger: {
-        trigger: contlastproject.current,
-        start: "center",
+        trigger: lastproject.current,
+        start: "top",
         end: "bottom",
         scrub: 0.5,
         markers: true,
@@ -39,7 +39,7 @@ function Lastproject() {
       className="mt-[-5px] rounded-b-3xl bg-black px-[1.5rem] py-[3.5rem] text-[#d1d1c7] sm:px-[4%] sm:py-[5%]"
     >
       <div
-        ref={lastproject}
+        // ref={lastproject}
         id="lastProject"
         className="relative grid grid-cols-12 items-center gap-[12px] overflow-hidden py-[100px] font-neue lg:gap-[20px]"
       >
@@ -76,9 +76,12 @@ function Lastproject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={project5} className="" />
+            <img src={project5} />
           </a>
         </div>
+      </div>
+      <div ref={lastproject} className="h-[100px] w-full bg-green-500">
+        hello
       </div>
     </div>
   );
