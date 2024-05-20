@@ -33,20 +33,20 @@ const ContentProject = ({
         <div className="overflow-hidden text-[42px] font-semibold capitalize sm:text-[68px] lg:text-[58px] xl:text-[72px]">
           <p id={text}>{name}</p>
         </div>
-        <div className="overflow-hidden text-[14px] text-gray-500 sm:text-[18px]">
+        <div className="overflow-hidden text-[18px] text-gray-500 sm:text-[18px]">
           <a href={link} target="_blank" rel="noopener noreferrer">
             <div href={link} target="_blank" id={text}>
               {link}
             </div>
           </a>
         </div>
-        <div className=" my-[4px] flex gap-x-1 overflow-hidden text-[14px] font-medium sm:my-[12px] sm:text-[28px] lg:text-[24px] xl:gap-x-[12px] xl:text-[32px]">
+        <div className=" my-[4px] flex gap-x-1 overflow-hidden text-[18px] font-medium sm:my-[12px] sm:text-[28px] lg:text-[24px] xl:gap-x-[12px] xl:text-[32px]">
           <div id={text}>{brand}</div>
           <div id={text}>•</div>
           <div id={text}>Front-end developer</div>
         </div>
         <div>
-          <div className="overflow-hidden text-[12px] sm:text-xl lg:text-[20px] xl:text-2xl">
+          <div className="overflow-hidden text-[18px] sm:text-xl lg:text-[20px] xl:text-2xl">
             <p id={text}>{children}</p>
           </div>
         </div>

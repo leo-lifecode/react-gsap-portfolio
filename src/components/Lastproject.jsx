@@ -47,7 +47,7 @@ function Lastproject() {
           <div className="overflow-hidden text-[42px] font-semibold capitalize sm:text-[68px] lg:text-[58px] xl:text-[72px]">
             <p id="textfive">NFT HOUSE</p>
           </div>
-          <div className="overflow-hidden text-[14px] text-gray-500 sm:text-[18px]">
+          <div className="overflow-hidden text-[18px] text-gray-500 sm:text-[18px]">
             <a
               href="https://nft-house.vercel.app"
               target="_blank"
@@ -56,13 +56,13 @@ function Lastproject() {
               <div id="textfive">https://nft-house.vercel.app</div>
             </a>
           </div>
-          <div className=" my-[4px] flex gap-x-1 overflow-hidden text-[14px] font-medium sm:my-[12px] sm:text-[28px] lg:text-[24px] xl:gap-x-[12px] xl:text-[32px]">
+          <div className=" my-[4px] flex gap-x-1 overflow-hidden text-[18px] font-medium sm:my-[12px] sm:text-[28px] lg:text-[24px] xl:gap-x-[12px] xl:text-[32px]">
             <div id="textfive">NFT</div>
             <div id="textfive">•</div>
             <div id="textfive">Front-end developer</div>
           </div>
           <div>
-            <div className="overflow-hidden text-[12px] sm:text-xl lg:text-[20px] xl:text-2xl">
+            <div className="overflow-hidden text-[18px] sm:text-xl lg:text-[20px] xl:text-2xl">
               <p id="textfive">
                 NFT HOUSE is a responsive web slicing figma to HTML CSS and
                 JAVASCRIPT
