@@ -19,14 +19,12 @@ const AboutMe = () => {
     gsap.from("#title-about", {
       scrollTrigger: {
         trigger: "#section2",
-        start: "top +=150",
-        end: "top +=150",
         scrub: 0.5,
         once: true,
       },
       opacity: 0,
       duration: 1,
-      y: 100,
+      y: 80,
     });
 
     gsap.from(".skills", {
@@ -36,9 +34,9 @@ const AboutMe = () => {
         end: "top",
         once: true,
       },
-      y: 120,
-      stagger: 0.1,
-      duration: 0.3,
+      y: 100,
+      stagger: 0.08,
+      duration: 0.1,
     });
   });
 

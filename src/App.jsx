@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import { useState } from "react";
 import "./App.css";
 import Overlay from "./components/Overlay";
 import Homepage from "./components/Homepage";
