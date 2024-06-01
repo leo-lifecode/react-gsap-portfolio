@@ -26,11 +26,8 @@ function Footer() {
   };
   return (
     <div className="relative mt-[7%]">
-      <div
-        id="sayhi"
-        className="relative z-10 text-center font-hkgro text-6xl font-black sm:text-5xl md:text-7xl lg:text-9xl"
-      >
-        SAY HI!
+      <div className="relative z-10 overflow-hidden text-center font-hkgro text-6xl font-black sm:text-5xl md:text-7xl lg:text-9xl">
+        <div id="sayhi">SAY HI!</div>
       </div>
       <div className="3xl:px-[10%] 3xl:pb-16 relative z-[3] px-6 pb-8 pt-6 font-neue sm:px-[4%] sm:pt-[5%]">
         <div className="grid grid-cols-2 gap-x-[1.5rem] gap-y-7 md:grid-cols-12 lg:gap-x-[2.5rem] lg:gap-y-10">

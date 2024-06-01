@@ -46,11 +46,8 @@ const AboutMe = () => {
   return (
     <div className="flex w-full flex-col items-center justify-center">
       <div className="overflow-hidden">
-        <div
-          id="title-about"
-          className=" font-neue text-[28px] font-semibold sm:mb-4 sm:text-[50px] sm:capitalize md:text-[60px] md:font-medium lg:mb-7 lg:text-[90px]"
-        >
-          About Me
+        <div className="overflow-hidden font-neue text-[28px] font-semibold sm:mb-4 sm:text-[50px] sm:capitalize md:text-[60px] md:font-medium lg:mb-7 lg:text-[90px]">
+          <div id="title-about">About Me</div>
         </div>
       </div>
       <div className="flex w-full flex-[0_0_100%] flex-col justify-center px-2 py-4 sm:flex-row sm:px-4 sm:py-0 lg:px-2">

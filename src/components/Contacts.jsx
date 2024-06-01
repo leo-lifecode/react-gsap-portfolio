@@ -65,11 +65,8 @@ const Contacts = () => {
         </div>
       ) : null}
       <div className="flex h-full w-full flex-col items-center px-4 py-2 sm:justify-center md:px-[52px] md:py-[20px]">
-        <div
-          id="contact"
-          className="font-neue text-[28px] font-semibold sm:mb-4 sm:text-[50px] sm:capitalize md:text-[60px] md:font-medium lg:mb-7 lg:text-[90px]"
-        >
-          Contact Me
+        <div className="overflow-hidden font-neue text-[28px] font-semibold sm:mb-4 sm:text-[50px] sm:capitalize md:text-[60px] md:font-medium lg:mb-7 lg:text-[90px]">
+          <div id="contact">Contact me</div>
         </div>
         <div className="flex w-full flex-col md:flex-row md:items-center">
           <div className="flex flex-col md:w-2/3 md:pe-[48px]">
