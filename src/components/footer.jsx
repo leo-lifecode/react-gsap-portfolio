@@ -8,7 +8,6 @@ function Footer() {
         start: "top +=550",
         end: "top +=550",
         once: true,
-        markers: true,
       },
       opacity: 0,
       duration: 0.8,
