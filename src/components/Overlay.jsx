@@ -1,3 +1,4 @@
+import React from "react";
 import { useGSAP } from "@gsap/react";
 const Overlay = ({ time }) => {
   useGSAP(() => {
@@ -6,7 +7,7 @@ const Overlay = ({ time }) => {
       y: 100,
       stagger: 0.12,
       opacity: 1,
-      ease: "power1.inOut",
+      ease: "power3.inOut",
     });
     time.set("#containertext", { overflow: "visible" });
 

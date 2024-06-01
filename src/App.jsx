@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import { useState } from "react";
 import "./App.css";
 import Overlay from "./components/Overlay";
 import Homepage from "./components/Homepage";
@@ -37,10 +38,10 @@ function App() {
       <section id="section2">
         <AboutMe />
       </section>
-      <div id="section3" className="mt-[100px]">
+      <div id="section3">
         <Project />
       </div>
-      <section id="section4" className="">
+      <section id="section4">
         <Contacts />
       </section>
       <div id="section5">

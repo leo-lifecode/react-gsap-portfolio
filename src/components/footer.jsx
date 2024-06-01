@@ -10,9 +10,9 @@ function Footer() {
         once: true,
       },
       opacity: 0,
-      duration: 0.8,
+      duration: 0.6,
       ease: "power3.inOut",
-      y: 100,
+      y: 80,
     });
   });
   const handlegsapscroll = (index) => {

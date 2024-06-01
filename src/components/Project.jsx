@@ -7,6 +7,7 @@ import project2 from "../assets/images/project2.png";
 import project32 from "../assets/images/project32.png";
 import project4 from "../assets/images/project4.png";
 import project5 from "../assets/images/project5.png";
+
 const Project = () => {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
@@ -14,17 +15,16 @@ const Project = () => {
       scrollTrigger: {
         trigger: "#section2",
         start: "+=100",
-        end: "+=100",
         scrub: 1,
       },
-      y: 300,
+      y: 200,
     });
     gsap.from(
       ".text-project",
       {
         scrollTrigger: {
           trigger: "#section_1",
-          start: "-=700",
+          start: "-=500",
         },
         y: 300,
         duration: 1,
@@ -32,11 +32,11 @@ const Project = () => {
       },
       "+=1.5",
     );
-
     gsap.to("#section_1", {
       scrollTrigger: {
         trigger: "#lastProject",
-        start: "+=100",
+        start: "center center",
+        end: "bottom",
         scrub: 1,
       },
       scale: 0.95,
@@ -45,12 +45,13 @@ const Project = () => {
     gsap.from(`#textfive`, {
       scrollTrigger: {
         trigger: "#lastProject",
-        start: "-=540",
+        start: "-=340",
       },
       stagger: 0.023,
       y: 200,
     });
   });
+
   return (
     <div
       id="section_1"
@@ -140,19 +141,14 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-12 me-[-50%] overflow-hidden rounded-2xl border-2 border-white lg:col-span-7 lg:me-[-35%] xl:me-[-50%]">
-            <div className="h-[249px] w-[404px] sm:h-[531px] sm:w-[861px] lg:h-[448px] lg:w-[726] xl:h-[531px] xl:w-[861px]">
-              <a
-                href="https://nfthouse.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={project5}
-                  className="h-[249px] w-[404px] sm:h-[531px] sm:w-[861px] lg:h-[448px] lg:w-[726] xl:h-[531px] xl:w-[861px]"
-                />
-              </a>
-            </div>
+          <div className="col-span-12 me-[-50%]  overflow-hidden rounded-2xl border-2 border-white lg:col-span-7 lg:me-[-35%] xl:me-[-50%]">
+            <a
+              href="https://nfthouse.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={project5} className="" />
+            </a>
           </div>
         </div>
       </div>

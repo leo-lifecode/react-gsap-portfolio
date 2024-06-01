@@ -18,9 +18,9 @@ const Contacts = () => {
         once: true,
       },
       opacity: 0,
-      duration: 0.6,
+      duration: 1,
       ease: "power3.inOut",
-      y: 100,
+      y: 80,
     });
   });
   const handlesubmitform = (e) => {

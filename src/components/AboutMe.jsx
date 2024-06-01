@@ -19,11 +19,13 @@ const AboutMe = () => {
     gsap.from("#title-about", {
       scrollTrigger: {
         trigger: "#section2",
-        scrub: 0.5,
+        start: "top +=180",
+        end: "top +=180",
         once: true,
       },
       opacity: 0,
-      duration: 1,
+      duration: 0.6,
+      ease: "power3.inOut",
       y: 80,
     });
 
@@ -36,7 +38,8 @@ const AboutMe = () => {
       },
       y: 100,
       stagger: 0.08,
-      duration: 0.1,
+      duration: 0.32,
+      ease: "power3.inOut",
     });
   });
 
