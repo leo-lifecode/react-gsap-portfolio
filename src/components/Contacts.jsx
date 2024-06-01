@@ -15,12 +15,12 @@ const Contacts = () => {
         trigger: "#section4",
         start: "top +=250",
         end: "top +=250",
-        scrub: 1,
         once: true,
       },
       opacity: 0,
-      duration: 1.5,
-      y: 80,
+      duration: 0.6,
+      ease: "power3.inOut",
+      y: 100,
     });
   });
   const handlesubmitform = (e) => {

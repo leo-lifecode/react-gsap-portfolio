@@ -1,5 +1,3 @@
-import React from "react";
-import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 const Overlay = ({ time }) => {
   useGSAP(() => {
@@ -26,7 +24,6 @@ const Overlay = ({ time }) => {
         opacity: 1,
         yPercent: -100,
         duration: 0.6,
-        ease: "power3.inOut",
       },
       "-=0.3",
     );
@@ -41,7 +38,7 @@ const Overlay = ({ time }) => {
         className="z-50 flex h-[300px] flex-col items-center justify-center overflow-hidden "
       >
         <span id="containertext" className="overflow-hidden text-white">
-          <span id="textup" className="opacity-1 font-neue font-semibold flex">
+          <span id="textup" className="opacity-1 flex font-neue font-semibold">
             Rizal
           </span>
         </span>

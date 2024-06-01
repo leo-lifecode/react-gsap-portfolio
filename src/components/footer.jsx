@@ -5,14 +5,15 @@ function Footer() {
     gsap.from("#sayhi", {
       scrollTrigger: {
         trigger: "#section5",
-        start: "top +=650",
-        end: "top +=650",
-        scrub: 1,
+        start: "top +=550",
+        end: "top +=550",
         once: true,
+        markers: true,
       },
       opacity: 0,
-      duration: 2,
-      y: 80,
+      duration: 0.8,
+      ease: "power3.inOut",
+      y: 100,
     });
   });
   const handlegsapscroll = (index) => {
