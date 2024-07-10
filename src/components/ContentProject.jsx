@@ -10,44 +10,61 @@ const ContentProject = ({
   children,
   stylecustom,
   id,
+  layouttext,
   text,
 }) => {
   gsap.registerPlugin(ScrollTrigger);
+  // useGSAP(() => {
+  //   gsap.from(`#${text}`, {
+  //     scrollTrigger: {
+  //       trigger: `#${id}`,
+  //       start: "-=480",
+  //     },
+  //     stagger: 0.02,
+  //     duration: 0.3,
+  //     y: 200,
+  //   });
+  // });
+
   useGSAP(() => {
-    gsap.from(`#${text}`, {
+    gsap.from(`.${layouttext}`, {
       scrollTrigger: {
         trigger: `#${id}`,
         start: "-=480",
       },
-      stagger: 0.02,
-      duration: 0.3,
-      y: 200,
+      stagger: 0.03,
+      duration: 0.6,
+      left: 0,
+      ease: "power3.in",
     });
   });
+
   return (
     <div
       id={id}
       className=" grid grid-cols-12 items-center gap-[12px] overflow-hidden py-[100px] font-neue lg:gap-[20px]"
     >
       <div className="col-span-12 lg:col-span-5">
-        <div className="overflow-hidden text-[42px] font-semibold capitalize sm:text-[68px] lg:text-[58px] xl:text-[72px]">
+        <div className="relative w-fit overflow-hidden text-[42px] font-semibold capitalize sm:text-[68px] lg:text-[58px] xl:text-[72px]">
           <p id={text}>{name}</p>
+          <div className={layouttext}></div>
         </div>
-        <div className="overflow-hidden text-[18px] text-gray-500 sm:text-[18px]">
+        <div className="relative w-fit overflow-hidden text-[18px] text-gray-500 sm:text-[18px]">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <div href={link} target="_blank" id={text}>
-              {link}
-            </div>
+            {link}
+            <div className={layouttext}></div>
           </a>
         </div>
-        <div className=" my-[4px] flex gap-x-1 overflow-hidden text-[20px] font-medium sm:my-[12px] sm:text-[28px] lg:text-[24px] xl:gap-x-[12px] xl:text-[32px]">
+        <div className="relative my-[4px] flex w-fit gap-x-1 overflow-hidden text-[20px] font-medium sm:my-[12px] sm:text-[28px] lg:text-[24px] xl:gap-x-[12px] xl:text-[32px]">
           <div id={text}>{brand}</div>
           <div id={text}>•</div>
           <div id={text}>Front-end developer</div>
+          <div className={layouttext}></div>
         </div>
         <div>
-          <div className="overflow-hidden text-[18px] sm:text-xl lg:text-[20px] xl:text-2xl">
+          <div className="relative w-fit overflow-hidden text-[18px] sm:text-xl lg:text-[20px] xl:text-2xl">
             <p id={text}>{children}</p>
+            <div className={layouttext}></div>
           </div>
         </div>
       </div>

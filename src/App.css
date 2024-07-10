@@ -8,6 +8,53 @@
   filter: blur(5px);
 }
 
+.layouttext1 {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  bottom: 4px;
+  left: 100%;
+  background: #fff;
+  z-index: 20;
+}
+.layouttext2 {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  bottom: 4px;
+  left: 100%;
+  background: #fff;
+  z-index: 20;
+}
+.layouttext3 {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  bottom: 4px;
+  left: 100%;
+  background: #fff;
+  z-index: 20;
+}
+.layouttext4 {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  bottom: 4px;
+  left: 100%;
+  background: #fff;
+  z-index: 20;
+}
+.layoutlast {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  bottom: 4px;
+  left: 100%;
+  background: #fff;
+  z-index: 20;
+  opacity: 1;
+}
+
 text {
   fill: #ff9800;
   font-family: "Montserrat";

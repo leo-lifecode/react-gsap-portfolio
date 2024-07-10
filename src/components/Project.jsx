@@ -10,6 +10,7 @@ import project5 from "../assets/images/project5.png";
 
 const Project = () => {
   gsap.registerPlugin(ScrollTrigger);
+  const time = gsap.timeline();
   useGSAP(() => {
     gsap.from("#section_1", {
       scrollTrigger: {
@@ -42,13 +43,22 @@ const Project = () => {
       scale: 0.95,
     });
 
-    gsap.from(`#textfive`, {
+    gsap.from(`.layoutlast`, {
       scrollTrigger: {
         trigger: "#lastProject",
         start: "-=340",
       },
-      stagger: 0.023,
-      y: 200,
+      stagger: 0.03,
+      duration: 0.6,
+      left: 0,
+      ease: "power3.in",
+    });
+    gsap.to(`.layoutlast`, {
+      scrollTrigger: {
+        trigger: "#lastProject",
+        start: "top",
+      },
+      opacity: 0,
     });
   });
 
@@ -64,6 +74,7 @@ const Project = () => {
           </div>
         </div>
         <ContentProject
+          layouttext={"layouttext1"}
           text="projecttextone"
           id="projectone"
           link="https://shoply-tnbcommerce.vercel.app/"
@@ -75,6 +86,7 @@ const Project = () => {
           Multi brand e-commerce design system for websites and mobile.
         </ContentProject>
         <ContentProject
+          layouttext={"layouttext2"}
           text="projecttexttwo"
           id="projecttwo"
           link=""
@@ -88,6 +100,7 @@ const Project = () => {
         </ContentProject>
         <ContentProject
           text="projecttextthree"
+          layouttext={"layouttext3"}
           id="projectthree"
           link="https://weather-app-reactweathr.vercel.app/"
           img={project32}
@@ -100,6 +113,7 @@ const Project = () => {
         </ContentProject>
         <ContentProject
           text="projecttextfour"
+          layouttext={"layouttext4"}
           id="projectfour"
           link="https://todo-list-reactapp-three.vercel.app/"
           img={project4}
@@ -115,10 +129,11 @@ const Project = () => {
           className="grid grid-cols-12 items-center gap-[12px] overflow-hidden py-[100px] font-neue lg:gap-[20px]"
         >
           <div className="col-span-12 lg:col-span-5">
-            <div className="overflow-hidden text-[42px] font-semibold capitalize sm:text-[68px] lg:text-[58px] xl:text-[72px]">
+            <div className="relative w-fit overflow-hidden text-[42px] font-semibold capitalize sm:text-[68px] lg:text-[58px] xl:text-[72px]">
               <p id="textfive">NFT HOUSE</p>
+              <div className="layoutlast"></div>
             </div>
-            <div className="overflow-hidden text-[14px] text-gray-500 sm:text-[18px]">
+            <div className="relative w-fit overflow-hidden text-[14px] text-gray-500 sm:text-[18px]">
               <a
                 href="https://nft-house.vercel.app"
                 target="_blank"
@@ -126,22 +141,25 @@ const Project = () => {
               >
                 <div id="textfive">https://nft-house.vercel.app</div>
               </a>
+              <div className="layoutlast"></div>
             </div>
-            <div className=" my-[4px] flex gap-x-1 overflow-hidden text-[14px] font-medium sm:my-[12px] sm:text-[28px] lg:text-[24px] xl:gap-x-[12px] xl:text-[32px]">
+            <div className="relative my-[4px] flex w-fit gap-x-1 overflow-hidden text-[14px] font-medium sm:my-[12px] sm:text-[28px] lg:text-[24px] xl:gap-x-[12px] xl:text-[32px]">
               <div id="textfive">NFT</div>
               <div id="textfive">•</div>
               <div id="textfive">Front-end developer</div>
+              <div className="layoutlast"></div>
             </div>
             <div>
-              <div className="overflow-hidden text-[12px] sm:text-xl lg:text-[20px] xl:text-2xl">
+              <div className="relative w-fit overflow-hidden text-[12px] sm:text-xl lg:text-[20px] xl:text-2xl">
                 <p id="textfive">
                   NFT HOUSE is a responsive web slicing figma to HTML CSS and
                   JAVASCRIPT
                 </p>
+                <div className="layoutlast"></div>
               </div>
             </div>
           </div>
-          <div className="col-span-12 me-[-50%]  overflow-hidden rounded-2xl border-2 border-white lg:col-span-7 lg:me-[-35%] xl:me-[-50%]">
+          <div className="relative col-span-12 me-[-50%] w-fit overflow-hidden rounded-2xl border-2 border-white lg:col-span-7 lg:me-[-35%] xl:me-[-50%]">
             <a
               href="https://nfthouse.vercel.app/"
               target="_blank"

@@ -35,7 +35,7 @@ function App() {
         <Homepage time={time} />
       </section>
       <TextSpllitOpacity1 />
-      <section id="section2" classname="mb-[100px] sm:mb-0">
+      <section id="section2" className="mb-[100px] sm:mb-0">
         <AboutMe />
       </section>
       <div id="section3">
