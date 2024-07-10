@@ -52,12 +52,12 @@ const AboutMe = () => {
       </div>
       <div className="flex w-full flex-[0_0_100%] flex-col justify-center px-2 py-4 sm:flex-row sm:px-4 sm:py-0 lg:px-2">
         <div className="flex w-full flex-[0_0_100%] justify-center sm:flex-[0_0_45%] lg:justify-end">
-          <div className="sm:h-[350px] sm:w-[350px] lg:h-[500px] lg:w-[450px]">
+          {/* <div className="sm:h-[350px] sm:w-[350px] lg:h-[500px] lg:w-[450px]">
             <img
               src={myImage}
               className="rounded-lg bg-cover bg-center sm:h-[350px] sm:w-[350px] lg:h-[500px] lg:w-[450px]"
             />
-          </div>
+          </div> */}
         </div>
         <div
           id="descriptionme"
