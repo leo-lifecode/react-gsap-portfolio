@@ -46,10 +46,10 @@ const Project = () => {
     gsap.from(`.layoutlast`, {
       scrollTrigger: {
         trigger: "#lastProject",
-        start: "-=340",
+        start: "-=400",
       },
       stagger: 0.03,
-      duration: 0.6,
+      duration: 0.4,
       left: 0,
       ease: "power3.in",
     });
