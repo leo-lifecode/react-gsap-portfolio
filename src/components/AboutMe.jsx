@@ -44,7 +44,7 @@ const AboutMe = () => {
   });
 
   return (
-    <div className="flex min-h-max w-full flex-col items-center justify-center pb-[100px]">
+    <div className="flex min-h-max w-full flex-col items-center justify-center pb-[100px] sm:pb-0">
       <div className="overflow-hidden">
         <div className="overflow-hidden font-neue text-[28px] font-semibold sm:mb-4 sm:text-[50px] sm:capitalize md:text-[60px] md:font-medium lg:mb-7 lg:text-[90px]">
           <div id="title-about">About Me</div>

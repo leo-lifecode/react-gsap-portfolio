@@ -14,26 +14,23 @@ const ContentProject = ({
   text,
 }) => {
   gsap.registerPlugin(ScrollTrigger);
-  // useGSAP(() => {
-  //   gsap.from(`#${text}`, {
-  //     scrollTrigger: {
-  //       trigger: `#${id}`,
-  //       start: "-=480",
-  //     },
-  //     stagger: 0.02,
-  //     duration: 0.3,
-  //     y: 200,
-  //   });
-  // });
-
   useGSAP(() => {
+    // time.from(`#${text}`, {
+    //   scrollTrigger: {
+    //     trigger: `#${id}`,
+    //     start: "-=480",
+    //   },
+    //   stagger: 0.02,
+    //   duration: 0.3,
+    //   y: 200,
+    // });
     gsap.from(`.${layouttext}`, {
       scrollTrigger: {
         trigger: `#${id}`,
-        start: "-=480",
+        start: "-=380",
       },
-      stagger: 0.03,
-      duration: 0.6,
+      stagger: 0.02,
+      duration: 0.5,
       left: 0,
       ease: "power3.in",
     });

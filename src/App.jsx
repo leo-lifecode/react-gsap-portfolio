@@ -21,8 +21,6 @@ function App() {
       trigger: "#section2",
       start: "center",
       pin: true,
-      scrub: 1.5,
-      duration: 1,
       pinSpacing: false,
     });
   });
@@ -35,7 +33,7 @@ function App() {
         <Homepage time={time} />
       </section>
       <TextSpllitOpacity1 />
-      <section id="section2" className=" sm:mb-0">
+      <section id="section2" className="sm:mb-0">
         <AboutMe />
       </section>
       <div id="section3">
