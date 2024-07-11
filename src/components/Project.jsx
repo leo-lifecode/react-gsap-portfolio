@@ -58,7 +58,6 @@ const Project = () => {
         trigger: "#lastProject",
         start: "top",
       },
-      opacity: 0,
     });
   });
 
