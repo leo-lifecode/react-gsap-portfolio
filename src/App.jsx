@@ -13,7 +13,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
-  const [time, setTime] = useState(gsap.timeline());
+  const time = gsap.timeline();
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {

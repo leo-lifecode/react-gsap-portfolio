@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useState } from "react";
 
 const ContentProject = ({
   img,
@@ -29,10 +30,19 @@ const ContentProject = ({
         trigger: `#${id}`,
         start: "-=380",
       },
-      stagger: 0.02,
-      duration: 0.5,
-      left: 0,
+      duration: 0.4,
+      stagger: 0.01,
+      left: "0%",
       ease: "power3.in",
+    });
+    gsap.set(`.${layouttext}`, {
+      scrollTrigger: {
+        trigger: `#${id}`,
+        start: "-=380",
+      },
+      delay: 0.45,
+      visibility: "hidden",
+      opacity: 0,
     });
   });
 

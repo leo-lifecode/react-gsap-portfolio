@@ -10,7 +10,6 @@ import project5 from "../assets/images/project5.png";
 
 const Project = () => {
   gsap.registerPlugin(ScrollTrigger);
-  const time = gsap.timeline();
   useGSAP(() => {
     gsap.from("#section_1", {
       scrollTrigger: {
@@ -48,16 +47,19 @@ const Project = () => {
         trigger: "#lastProject",
         start: "-=400",
       },
-      stagger: 0.03,
       duration: 0.4,
-      left: 0,
+      stagger: 0.01,
+      left: "0%",
       ease: "power3.in",
     });
-    gsap.to(`.layoutlast`, {
+    gsap.set(`.layoutlast`, {
       scrollTrigger: {
         trigger: "#lastProject",
         start: "top",
       },
+      delay: 0.45,
+      visibility: "hidden",
+      opacity: 0,
     });
   });
 
